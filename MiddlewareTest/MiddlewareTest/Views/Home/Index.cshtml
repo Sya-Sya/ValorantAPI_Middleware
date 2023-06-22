@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MiddlewareTest.Models.MModel.GetWeaponModel>
+
+@{
+    var title = "Index";
+    var datacheck = Model;
+    ViewData["Title"] = title;
+}
+<div class="row">
+    <div class="col-lg-3">
+        <div class="card" sytle="height:200px">
+            @foreach (var item in Model)
+            {
+                <div class="card-body">
+                    <img src="@Url.Content(item.displayIcon)" alt="Weapons" class="rounded">
+                    <div class="card-body">
+                        @Html.DisplayFor(modelItem => item.displayName)
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.category)</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

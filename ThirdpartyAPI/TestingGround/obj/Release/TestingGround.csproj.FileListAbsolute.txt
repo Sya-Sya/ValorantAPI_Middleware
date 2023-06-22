@@ -1,0 +1,26 @@
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\TestingGround.exe.config
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\TestingGround.exe
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\TestingGround.pdb
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\Newtonsoft.Json.dll
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\ThirdpartyAPI.dll
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\ThirdpartyAPI.pdb
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\bin\Release\Newtonsoft.Json.xml
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.AssemblyReference.cache
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.SuggestedBindingRedirects.cache
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.CoreCompileInputs.cache
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.CopyComplete
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.exe
+D:\MyThing\.NET\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.pdb
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\TestingGround.exe.config
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\TestingGround.exe
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\TestingGround.pdb
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\Newtonsoft.Json.dll
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\ThirdpartyAPI.dll
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\ThirdpartyAPI.pdb
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\bin\Release\Newtonsoft.Json.xml
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.AssemblyReference.cache
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.SuggestedBindingRedirects.cache
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.CoreCompileInputs.cache
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.csproj.CopyComplete
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.exe
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\TestingGround\obj\Release\TestingGround.pdb

@@ -1,0 +1,6 @@
+D:\MyThing\.NET\ThirdpartyAPI\TPAPIModel\bin\Debug\TPAPIModel.dll
+D:\MyThing\.NET\ThirdpartyAPI\TPAPIModel\bin\Debug\TPAPIModel.pdb
+D:\MyThing\.NET\ThirdpartyAPI\TPAPIModel\obj\Debug\TPAPIModel.csproj.AssemblyReference.cache
+D:\MyThing\.NET\ThirdpartyAPI\TPAPIModel\obj\Debug\TPAPIModel.csproj.CoreCompileInputs.cache
+D:\MyThing\.NET\ThirdpartyAPI\TPAPIModel\obj\Debug\TPAPIModel.dll
+D:\MyThing\.NET\ThirdpartyAPI\TPAPIModel\obj\Debug\TPAPIModel.pdb

@@ -1,0 +1,18 @@
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\bin\Release\ThirdpartyAPI.dll
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\bin\Release\ThirdpartyAPI.pdb
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\bin\Release\Newtonsoft.Json.dll
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\bin\Release\Newtonsoft.Json.xml
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.csproj.AssemblyReference.cache
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.csproj.CoreCompileInputs.cache
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.csproj.CopyComplete
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.dll
+D:\MyThing\.NET\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.pdb
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\bin\Release\ThirdpartyAPI.dll
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\bin\Release\ThirdpartyAPI.pdb
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\bin\Release\Newtonsoft.Json.dll
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\bin\Release\Newtonsoft.Json.xml
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.csproj.AssemblyReference.cache
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.csproj.CoreCompileInputs.cache
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.csproj.CopyComplete
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.dll
+D:\MyThing\.NET\Integrading Middleware\ThirdpartyAPI\ThirdpartyAPI\obj\Release\ThirdpartyAPI.pdb
