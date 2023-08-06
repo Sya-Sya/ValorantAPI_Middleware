@@ -1,23 +1,66 @@
 ﻿@model IEnumerable<MiddlewareTest.Models.MModel.GetWeaponModel>
+@*@model IEnumerable<MiddlewareTest.Models.WeaponModel.Root>*@
 
 @{
     var title = "Index";
     var datacheck = Model;
     ViewData["Title"] = title;
 }
-<div class="row">
-    <div class="col-lg-3">
-        <div class="card" sytle="height:200px">
-            @foreach (var item in Model)
-            {
-                <div class="card-body">
-                    <img src="@Url.Content(item.displayIcon)" alt="Weapons" class="rounded">
-                    <div class="card-body">
-                        @Html.DisplayFor(modelItem => item.displayName)
-                        <p class="card-text">@Html.DisplayFor(modelItem => item.category)</p>
+
+<style>
+    .myStyle {
+        width: 51rem;
+        outline: 3px solid black;
+        padding: 10px;
+        margin: 15px;
+    }
+</style>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div id="myUniqueGun" onclick="checkDetail()">
+            <div class="col-sm-4 myStyle">
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="@Url.Content(item.displayIcon)" alt="Weapons" class="rounded">
+                        <div class="card-body" style="margin-left:20px;">
+                            @Html.HiddenFor(Model => item.displayName)
+                            <p>@Html.DisplayFor(modelItem => item.displayName)</p>
+                            @Html.HiddenFor(modelItem => item.displayName, new { @class = "myType" })
+                            <p class="card-text">@Html.DisplayFor(modelItem => item.category)</p>
+                        </div>
                     </div>
                 </div>
-            }
+            </div>
         </div>
-    </div>
+    }
 </div>
+
+<script>
+    function checkDetail() {
+        debugger
+        var myGunType = $(".myType").val();
+        if (myGunType != null) {
+            $.ajax({
+
+                url: '/Home/About',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    'GunName': myGunType
+                },
+                success: function (data) {
+                    alert('Data: ' + data);
+                },
+                error: function (request, error) {
+                    alert("Request: " + data);
+                }
+            });
+        }
+        else {
+            alert("Gun Type is not Found !!!");
+        }
+    }
+
+</script>
