@@ -18,5 +18,16 @@ namespace MiddlewareTest.Static
             }
             return sr;
         }
+
+        public static T MapObject<T>(this object item)
+        {
+            T sr = default(T);
+            if (item != null)
+            {
+                var obj = Newtonsoft.Json.JsonConvert.SerializeObject(item);
+                sr = JsonConvert.DeserializeObject<T>(obj);
+            }
+            return sr;
+        }
     }
 }

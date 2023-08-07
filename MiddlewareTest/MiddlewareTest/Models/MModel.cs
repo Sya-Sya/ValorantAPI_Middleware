@@ -18,6 +18,8 @@ namespace MiddlewareTest.Models
             public object image { get; set; }
             public string newImage { get; set; }
             public List<Skin> skins { get; set; }
+            public List<Chroma> chromas { get; set; }
+            public List<Level> levels { get; set; }
         }
 
         public class Skin
@@ -29,8 +31,7 @@ namespace MiddlewareTest.Models
             public string displayIcon { get; set; }
             public string wallpaper { get; set; }
             public string assetPath { get; set; }
-            public List<Chroma> chromas { get; set; }
-            public List<Level> levels { get; set; }
+            
         }
         public class Chroma
         {
