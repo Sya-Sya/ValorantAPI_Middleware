@@ -12,6 +12,7 @@ using static MiddlewareTest.Models.MyValoData;
 using static MiddlewareTest.Models.MyValoData.Root;
 using System.CodeDom;
 using static MiddlewareTest.Models.WeaponModel;
+using MiddlewareTest.Static;
 
 namespace MiddlewareTest.Controllers
 {
@@ -77,7 +78,7 @@ namespace MiddlewareTest.Controllers
         }
 
         [HttpPost, OverrideResultFilters]
-        public JsonResult About(string GunName)
+        public ActionResult About(string GunName)
         {
             GunName = GunName.ToLower();
             if (!string.IsNullOrEmpty(GunName))
@@ -88,19 +89,69 @@ namespace MiddlewareTest.Controllers
                 var Type = mappedData.data.FirstOrDefault(x => x.displayName.ToLower() == GunName);
                 List<GetWeaponModel> GWM2 = new List<GetWeaponModel>();
                 GetWeaponModel model2 = new GetWeaponModel();
+                var ListSkins = new List<MModel.Skin>();
+                var ListChroma = new List<MModel.Chroma>();
+                var ListLevel = new List<MModel.Level>();
                 model2.cost = Type.shopData.cost.ToString();
                 model2.category = Type.shopData.category.ToString();
                 model2.newImage = Type.shopData.newImage;
-                var skins = new List<MModel.Skin>();
-                var Chroma = new List<MModel.Chroma>();
-                var Level = new List<MModel.Level>();
+                model2.skins = ListSkins;
+                model2.chromas = ListChroma;
+                model2.levels = ListLevel;
+
+                foreach (var item in Type.skins)
+                {
+                    MModel.Skin MMS = new MModel.Skin();
+                    MMS.uuid = item.uuid;
+                    MMS.assetPath = item.assetPath;
+                    MMS.displayIcon = item.displayIcon;
+                    MMS.assetPath = item.assetPath;
+                    ListSkins.Add(MMS);
+
+                    foreach (var chormas in item.chromas)
+                    {
+                        MModel.Chroma MMC = new MModel.Chroma();
+                        MMC.uuid = chormas.uuid;
+                        MMC.assetPath = chormas.assetPath;
+                        MMC.fullRender = chormas.fullRender;
+                        MMC.displayName = chormas.displayName;
+                        ListChroma.Add(MMC);
+                    }
+
+                    foreach (var lvl in item.levels)
+                    {
+                        MModel.Level MML = new MModel.Level();
+                        MML.uuid = lvl.uuid;
+                        MML.assetPath = lvl.assetPath;
+                        MML.displayName = lvl.displayName;
+                        MML.displayIcon = lvl.displayIcon;
+                        MML.streamedVideo = lvl.streamedVideo;
+                        ListLevel.Add(MML);
+                    }
+                }
+
+                if (model2 != null)
+                {
+                    return RedirectToAction("Contact", new { myData = model2 });
+                }
+                else
+                {
+                    return Json(
+                    new
+                    {
+                        status = "Faile",
+                        Message = "Filed to get data"
+                    }
+                    );
+                }
 
                 return Json(
-                new
-                {
-                    status = "Success"
-                }
-                );
+                        new
+                        {
+                            status = "Success",
+                            Message = "Filed to get data"
+                        }
+                        );
             }
             else
             {
@@ -114,7 +165,7 @@ namespace MiddlewareTest.Controllers
             }
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact(GetWeaponModel myData)
         {
             ViewBag.Message = "Your contact page.";
 
